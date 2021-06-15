@@ -1,15 +1,17 @@
 //
-//  ViewController.swift
+//  ViewControllerTwoItem.swift
 //  ContactsHW
 //
-//  Created by Анна Басюк on 10.06.2021.
+//  Created by Анна Басюк on 14.06.2021.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewControllerTwoItem: UIViewController {
 
     private var personlist = Person.getPersonList()
+    
+    private var sectionTitle = Person.getPersonList()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,23 +20,11 @@ class ViewController: UIViewController {
     
 }
 
-/// Mark: UITableViewDelegate
-
-extension ViewController {
-        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-        let person = personlist[indexPath.row]
-        
-        performSegue(withIdentifier: "showDetails", sender: person)
-    }
-}
-
-
-extension ViewController: UITableViewDelegate{
+extension ViewControllerTwoItem: UITableViewDelegate{
     
 }
 
-extension ViewController: UITableViewDataSource{
+extension ViewControllerTwoItem: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         personlist.count
     }
@@ -52,14 +42,9 @@ extension ViewController: UITableViewDataSource{
         cell.contentConfiguration = content
         
         return cell
+        
+        
     }
 }
 
-extension ViewController {
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let vc = segue.destination as? DetailPersonViewController else { return }
-        
-        vc.person = sender as? Person
-    }
-}
 
