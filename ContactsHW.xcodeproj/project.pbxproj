@@ -13,6 +13,9 @@
 		AB13C2B0267299950008F6DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB13C2AE267299950008F6DA /* Main.storyboard */; };
 		AB13C2B2267299980008F6DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB13C2B1267299980008F6DA /* Assets.xcassets */; };
 		AB13C2B5267299980008F6DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB13C2B3267299980008F6DA /* LaunchScreen.storyboard */; };
+		ABC40990267362C600D0DE6A /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC4098F267362C600D0DE6A /* Person.swift */; };
+		ABD571132677C1F300D4D4AC /* ViewControllerTwoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD571122677C1F300D4D4AC /* ViewControllerTwoItem.swift */; };
+		ABD571172677D2EC00D4D4AC /* DetailPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD571162677D2EC00D4D4AC /* DetailPersonViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		AB13C2B1267299980008F6DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB13C2B4267299980008F6DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB13C2B6267299980008F6DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABC4098F267362C600D0DE6A /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		ABD571122677C1F300D4D4AC /* ViewControllerTwoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTwoItem.swift; sourceTree = "<group>"; };
+		ABD571162677D2EC00D4D4AC /* DetailPersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPersonViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 				AB13C2B1267299980008F6DA /* Assets.xcassets */,
 				AB13C2B3267299980008F6DA /* LaunchScreen.storyboard */,
 				AB13C2B6267299980008F6DA /* Info.plist */,
+				ABC4098F267362C600D0DE6A /* Person.swift */,
+				ABD571122677C1F300D4D4AC /* ViewControllerTwoItem.swift */,
+				ABD571162677D2EC00D4D4AC /* DetailPersonViewController.swift */,
 			);
 			path = ContactsHW;
 			sourceTree = "<group>";
@@ -139,6 +148,9 @@
 			files = (
 				AB13C2AD267299950008F6DA /* ViewController.swift in Sources */,
 				AB13C2A9267299940008F6DA /* AppDelegate.swift in Sources */,
+				ABD571172677D2EC00D4D4AC /* DetailPersonViewController.swift in Sources */,
+				ABC40990267362C600D0DE6A /* Person.swift in Sources */,
+				ABD571132677C1F300D4D4AC /* ViewControllerTwoItem.swift in Sources */,
 				AB13C2AB267299950008F6DA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,6 +300,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ContactsHW/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,6 +319,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ContactsHW/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
